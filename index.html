@@ -83,72 +83,35 @@
         #welcome {
             background: url('https://via.placeholder.com/1200x400/4a2c6d/fff?text=Youth+Retreat') center/cover no-repeat;
             text-align: center;
-            padding: 60            background: url('https://via.placeholderpx 20px;
-           .com/1200x400 color: #fff;
-           /4a2c6d/fff?text=Youth+Retreat') animation: fade center/cover noIn 1s-repeat;
-            text-align: ease-in; center;
-           
-        } padding: 60
-
-px 20px        .banner {
-           ;
-            background-color: color: # rgba(0fff;
-            animation:, 0, 0, 0.6);
-            padding: 30px;
-            border fadeIn 1s ease-in;
-        }-radius: 10
+            padding: 60px 20px;
+            color: #fff;
+            animation: fadeIn 1s ease-in;
+        }
 
         .banner {
-px;
-            max-width:            background-color 600px;: rgba(
-            margin:0, 0 0 auto;, 0,
-        } 0.6);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
 
-
-            padding        .banner: 30px;
-            border-radius: 10px; h1 {
-            max
-            font-width: 600-size: 2px;
-            margin: 0.5em auto;
-;
+        .banner h1 {
+            font-size: 2.5em;
         }
 
         .banner p {
-        }
-            font-size
-        .banner h: 1.1 {
-2em;            font-size: 2.5em
+            font-size: 1.2em;
         }
 
-;
-               @keyframes }
- fadeIn {
-        .banner p
-            from {
-            { opacity: 0; }
- font-size: 1.2em;
+        @keyframes fadeIn {
+            from { opacity: 0; }
             to { opacity: 1; }
         }
-        }
 
-        /*
-        Parishes Section @keyframes fade */
-       In {
- #parishes            from { opacity: 0 {
-           ; }
- padding: 40            to {px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
- opacity: 1; }
-               }
-
-        }
- .filter-search
-        /* {
-            Parishes Section */
-        display: flex #parishes {
-            padding;
-           : 40px gap: 10 20px;
+        /* Parishes Section */
+        #parishes {
+            padding: 40px 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
@@ -157,134 +120,72 @@ px;
             display: flex;
             gap: 10px;
             margin-bottom: 20px;
-           px;
-            margin-bottom flex-wrap:: 20px wrap;
-;
-                   }
- flex-wrap:
-        # wrap;
-search-parish,        }
+            flex-wrap: wrap;
+        }
 
-        #deanery-filter {
-            padding: 10px; #search-par
-            border: 1px solid #cccish, #;
-            border-radius: 5px;deanery
+        #search-parish, #deanery-filter {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
             width: 100%;
             max-width: 300px;
         }
 
-        .-filter {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radiusparish-list {
+        .parish-list {
             display: grid;
-            grid-template: 5px;
-            width: 100-columns: repeat(auto-fit, minmax(250%;
-            max-width: 300px, 1fr));
-px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
         }
-            gap:
-        .parish 20px;-list {
-            display
-        }: grid;
 
-
-            grid        .parish-card {
+        .parish-card {
             background-color: #fff;
-           -template-columns: padding: repeat(auto-fit, minmax 20px;(250px, 1fr));
-            gap:
-            border 20px;-radius: 10
-        }px;
-
-
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0        .par.1);
-            text-align: centerish-card {;
-           
-            background transition: transform-color: #fff;
-            0.3 padding: 20px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-s;
-            text-align        }
-: center;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
         .parish-card:hover {
-           
-            transition transform: translate: transform 0.3s;
+            transform: translateY(-5px);
         }
 
-        .parish-cardY(-5:hover {
-            transformpx);
-: translateY        }
-
-        /*(-5px Events Section */);
-        }
-
+        /* Events Section */
         #events {
-            padding:
-        /* 40px 20 Events Section */
-        #px;
-events {
-                       background-color padding: 40px 20px;: #fff;
+            padding: 40px 20px;
+            background-color: #fff;
         }
 
-            background
-       -color: # .event-listfff;
- {
-                   }
- display: grid
-       ;
-            .event-list grid-template-columns {
-           : repeat(auto display: grid;-fit, minmax(250px
+        .event-list {
+            display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20, 1frpx;
-        }));
-            gap: 20
-
-px;
-        .event-card {
+            gap: 20px;
         }
 
-        .            background-color: #event-card {
+        .event-card {
             background-color: #f9f9f9;
             padding: 20px;
             border-radius: 10px;
-f9f9f9            box-shadow;
-           : 0 2px 5 padding: 20px rgba(px;
-0, 0            border-radius:, 0, 0.1 10px;
-            box);
-        }
--shadow: 0
-        /* 2px 5 Registration/Login Sectionpx rgba(0, 0, 0, 0. */
-        #register, #dashboard1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         /* Registration/Login Section */
-        #register, {
-            #dashboard {
-            padding: 40px 20px padding: 40px 20;
-            max-widthpx;
-: 600px;
-            margin:            max-width: 600px 0 auto;
-        }
-;
+        #register, #dashboard {
+            padding: 40px 20px;
+            max-width: 600px;
             margin: 0 auto;
-        .
-        }form-container {
+        }
+
+        .form-container {
             background-color: #fff;
             padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-
-            border-radius: 10px        .form;
-            box-shadow: 0 2px 5px rgba(0-container {
-            background-color, 0,: #fff 0, 0.1);;
-           
-        } padding: 20
-
-px;
-            border-radius        form {
-            display: 10px: flex;;
-           
-            flex box-shadow: 0 2-direction: columnpx 5px;
+        form {
+            display: flex;
+            flex-direction: column;
             gap: 10px;
         }
 
@@ -294,7 +195,7 @@ px;
 
         form input, form select {
             padding: 10px;
- rgba(0            border: 1px solid #ccc;
+            border: 1px solid #ccc;
             border-radius: 5px;
         }
 
@@ -302,643 +203,426 @@ px;
         .modal {
             display: none;
             position: fixed;
-            top:, 0, 0;
- 0, 0.1);            left:
-        } 0;
-
-
-            width:        form { 100%;
-            height
-            display: 100%;
-            background-color: rgba(0: flex;
-            flex-direction:, 0, 0, 0.5);
-            column;
- justify-content: center;
-            align-items:            gap: center;
- 10px;            z-index
-        }: 200;
-
-
-        }
-
-        form label {
-            font-weight: 600        .modal-content {;
-       
-            background-color }
-: #fff
-        form;
-            input, form padding: 20 select {
-            padding: 10px;
-            border:px;
-            border-radius 1px solid #ccc;
-           : 10px;
-            max-width: 400px;
-            width border-radius:: 90%;
-        }
- 5px;
-        }
-
-       
-        .close-btn /* Login Modal {
-            */
-        .modal { float: right;
-
-            display            font-size:: none; 1.5
-            position: fixed;
-           em;
- top: 0;
+            top: 0;
             left: 0;
-            width            cursor:: 100%; pointer;
-        }
-
+            width: 100%;
             height: 100%;
-           
-        /* background-color: Forum Section */
-        #forum {
-            padding rgba(0, 0,: 40px 0, 0.5);
-            20px;
-            max justify-content:-width: 1200px center;
-            align;
-            margin: 0 auto-items: center;
-            z;
-        }
--index: 200;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 200;
         }
 
         .modal-content {
-            background-color
-        .forum-post {
-            background: #fff;
+            background-color: #fff;
             padding: 20px;
             border-radius: 10px;
-            max-width:-color: #fff;
-            padding: 400px; 15px;
-            border-radius: 10
+            max-width: 400px;
             width: 90%;
-px;
-            margin-bottom: 10px        }
-
-        .close;
-           -btn {
-            float box-shadow: 0 2px 5px rgba(0,: right; 0, 0, 0.1);
         }
 
-        /* Contact Section
+        .close-btn {
+            float: right;
             font-size: 1.5em;
             cursor: pointer;
         }
 
- */
-               /* Forum Section */
-        # #contact {
-            paddingforum {
+        /* Forum Section */
+        #forum {
             padding: 40px 20px;
-: 40px            max-width 20px;: 1200px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
-        .
-            textforum-post {
--align: center            background-color;
-           : #fff background-color: #4a;
-            padding: 152c6d;
-            color: #px;
-fff;
+        .forum-post {
+            background-color: #fff;
+            padding: 15px;
             border-radius: 10px;
-            margin        }
-
-        /* Footer */
-        footer-bottom: 10 {
-            text-align:px;
- center;
-            padding: 20            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-       px;
-            background-color: #333;
-            color }
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
         /* Contact Section */
         #contact {
-            padding: 40: #fff;
-        }
-px 20px
-        /* Responsive Design */
-        @;
-            text-alignmedia (max: center;-width: 768px)
-            background-color: #4a2c6d {
-            .nav;
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #4a2c6d;
             color: #fff;
--links {
         }
 
         /* Footer */
-        footer {                flex-direction: column;
-                gap
-            text: 10px;
-            }-align: center;
-
-
-            .filter            padding: 20px;
+        footer {
+            text-align: center;
+            padding: 20px;
             background-color: #333;
             color: #fff;
         }
 
--search {
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .filter-search {
                 flex-direction: column;
             }
 
             .banner h1 {
-                       /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-links {
-                flex-direction: column;
-                gap: 10 font-size:px;
-            } 1.8em;
-
-            .filter
-            }-search {
-
+                font-size: 1.8em;
+            }
         }
-                   flex-direction: column </style>
+    </style>
 </head>
 <body>
-    <!-- Language;
-            Toggle -->
-    <div class="lang }
-
-            .banner h1 {
-                font-size: 1.-toggle">
-        <select id="language-toggle8em;
-">
-            <option value="            }
-       en">English</option>
-            <option value }
-    </style>="sw">Swahili</
-</headoption>
+    <!-- Language Toggle -->
+    <div class="lang-toggle">
+        <select id="language-toggle">
+            <option value="en">English</option>
+            <option value="sw">Swahili</option>
         </select>
     </div>
 
     <!-- Header -->
     <header>
->
-<body        <nav>
-    <!-- Language Toggle -->
-    <div class="lang-toggle">
-        <select id="language-toggle">
-            <option value="en">English</option>
-            <option value=">
-            <div class="logo">Archsw">Swahili</option>
-        </diocese of Nairobiselect>
-    </div>
-
-    <!-- Header -->
-    <header></div>
-            <ul class="nav-links">
-
-        <nav                <li><a href="https://archdioceseofnairobi.org/">
+        <nav>
             <div class="logo">Archdiocese of Nairobi</div>
             <ul class="nav-links">
-                <li><a href="https://archdioceseofnairobi.org/" data-lang data-lang="en">="en">Home</aHome</a>
-                   >
-                    <a href="https://arch <adiocese href="https://archdioceseofnairobi.org/" data-langofnairobi.org/" data="sw"-lang="sw style="display: none;">Ny" style="display: none;">Nyumbumbaniani</a></</a></li>
-               li>
-                <li><a href="#parishes" data <li><a href-lang="#parishes" data-lang="en">Parishes</a>
-                   ="en">Parishes</a>
-                    <a href="#parishes <a href="#parishes" data-lang="sw" data-lang="sw" style="" style="display: nonedisplay: none;">Parokia;">Parokia</a></li>
-               </a></li>
-                <li><a href="#events <li><a href="#" data-langevents"="en data-lang="en">Events</a">Events</a>
->
-                    <a href="#                    <a href="#events" dataevents" data-lang="sw" style="display: none;">Matukio</a></li>
-               -lang="sw" style="display: none;">Matukio</a></li>
-                <li><a href <li><a href="#contact"="#contact" data-lang="en">Contact</a>
-                    <a href="#contact data-lang="en">Contact</a>
-                   " data-lang="sw <a href="#contact"" style="display: none data-lang="sw";">Wasil style="display: none;">Wasiliana</aiana</a></li>
-                <li><a href></li>
-                <li><a href="#login"="#login" class="btn" data class="btn" data-lang="en-lang="en">Log In">Log In / Register</a>
-                    / Register</a>
-                    <a href="#login" <a href="#login" class="btn" data class="btn" data-lang="sw-lang="sw" style="" style="display: none;">Ingdisplay: none;">Ingiaia / / Jis Jisajiliajili</a></li>
-            </ul>
-        </nav</a></li>
+                <li><a href="https://archdioceseofnairobi.org/" data-lang="en">Home</a>
+                    <a href="https://archdioceseofnairobi.org/" data-lang="sw" style="display: none;">Nyumbani</a></li>
+                <li><a href="#parishes" data-lang="en">Parishes</a>
+                    <a href="#parishes" data-lang="sw" style="display: none;">Parokia</a></li>
+                <li><a href="#events" data-lang="en">Events</a>
+                    <a href="#events" data-lang="sw" style="display: none;">Matukio</a></li>
+                <li><a href="#contact" data-lang="en">Contact</a>
+                    <a href="#contact" data-lang="sw" style="display: none;">Wasiliana</a></li>
+                <li><a href="#login" class="btn" data-lang="en">Log In / Register</a>
+                    <a href="#login" class="btn" data-lang="sw" style="display: none;">Ingia / Jisajili</a></li>
             </ul>
         </nav>
-   >
     </header>
- </header>
-    <!-- Welcome
 
     <!-- Welcome Section -->
     <section id="welcome">
-        <div Section -->
-    <section id="welcome">
-        <div class="banner class="banner">
-           ">
-            <h1 data <h1 data-lang="en-lang="en">Welcome to the Youth Portal</h">Welcome to the Youth Portal</h1>
-            <h11>
-            <h1 data-lang="sw" style="display: none;">Karibu kw data-lang="sw" styleenye T="display: none;">Karibu kwenye Tovutiovuti ya Vijana</h1 ya Vijana>
-           </h1>
-            <p data-lang <p data-lang="en">Emp="en">Empowering Young Catholics to Liveowering Young Catholics to Live, Love,, Love, and Lead in and Lead in Faith</ Faith</p>
-            <pp>
-            <p data data-lang="-lang="swsw" style="" style="display: none;">Kuwapadisplay: none;">Kuwapa Vijana W Vijana Wakatolikiakatol Nguvu zaiki Nguvu za Kuishi Kuishi, Kup, Kupendaenda, na, na Kuongoza Kuongoza kwa kwa I Imani</mani</p>
-p>
-            <a href="#register            <a href="#register" class="" class="btn" data-lang="en">Join Nowbtn" data-lang="en">Join Now</a>
-            <a</a> href="#register
-            <a href="#register" class="" class="btn" databtn" data-lang="-lang="swsw" style" style="="display:display: none none;">Ji;">Jiungeunge Sasa Sasa</</a>a>
+        <div class="banner">
+            <h1 data-lang="en">Welcome to the Youth Portal</h1>
+            <h1 data-lang="sw" style="display: none;">Karibu kwenye Tovuti ya Vijana</h1>
+            <p data-lang="en">Empowering Young Catholics to Live, Love, and Lead in Faith</p>
+            <p data-lang="sw" style="display: none;">Kuwapa Vijana Wakatoliki Nguvu za Kuishi, Kupenda, na Kuongoza kwa Imani</p>
+            <a href="#register" class="btn" data-lang="en">Join Now</a>
+            <a href="#register" class="btn" data-lang="sw" style="display: none;">Jiunge Sasa</a>
         </div>
-
-        </    </sectiondiv>
->
-    </section
-    <!-- Parishes and>
-
- Deaneries Directory -->
-       <!-- Paris <section id="hes and Deanparishes">eries Directory -->
-        <h2 data-lang="en
-    <section id="par">Find Yourishes">
-        <h Parish Youth Group</h2>
-       2 data-lang="en"> <h2 dataFind Your Parish Youth Group</h2>
-        <h2 data-lang="sw" style="display: none;">P-lang="sw" style="display: noneata Kikundi cha;">Pata Kikundi cha Vij Vijanaana cha Parokia Y cha Parokia Yako</hako</h2>
-       2>
-        <div class <div class="="filter-searchfilter-search">">
-           
-            <input <input type=" type="text" id="search-parish" placeholder="text" id="search-parish" placeholderSearch by parish or="Search by parish or deanery..." deanery..." data-lang="en">
-            <input type="text" id data-lang="en">
-            <input type="search-parish-sw"="text" id="search-parish-sw" placeholder placeholder="T="Tafutaafuta kwa kwa parokia parokia au au jim jimbo..."bo..." data data-lang="-lang="swsw" style" style="display: none="display:;">
-            none;">
-            <select id="deanery-filter">
-                <option value="">All <select id="deanery-filter">
-                <option value="">All Deaneries</ Deaneries</option>
-                <option value="Nairobi Central">Noption>
-airobi Central                <option value</option>="Nairobi
-                <option value="Nai Central">Nrobi West">Nairobiairobi Central</option>
-                West</option <option value="Nairobi West">Nairobi West</option>
->
-                               <option value="Nai <option value="robi East">NaiNairobirobi East</option> East">Nairobi East</option>
-            </select>
-        </div>
-        <div class="
-            </select>
-        </div>
-        <div class="parishparish-list">
--list">
-            <!-- Pop            <!-- Populated dynamicallyulated dynamically via JavaScript via JavaScript -->
- -->
-               </div </div>
     </section>
 
-    <!-- Events>
-    </section> Calendar -->
-
+    <!-- Parishes and Deaneries Directory -->
+    <section id="parishes">
+        <h2 data-lang="en">Find Your Parish Youth Group</h2>
+        <h2 data-lang="sw" style="display: none;">Pata Kikundi cha Vijana cha Parokia Yako</h2>
+        <div class="filter-search">
+            <input type="text" id="search-parish" placeholder="Search by parish or deanery..." data-lang="en">
+            <input type="text" id="search-parish-sw" placeholder="Tafuta kwa parokia au jimbo..." data-lang="sw" style="display: none;">
+            <select id="deanery-filter">
+                <option value="">All Deaneries</option>
+                <option value="Nairobi Central">Nairobi Central</option>
+                <option value="Nairobi West">Nairobi West</option>
+                <option value="Nairobi East">Nairobi East</option>
+            </select>
+        </div>
+        <div class="parish-list">
+            <!-- Populated dynamically via JavaScript -->
+        </div>
+    </section>
 
     <!-- Events Calendar -->
-    <section id="    <section idevents">
-        <h2 data-lang="en="events">
-        <h2 data-lang="en">Upcoming">Upcoming Youth Events</h2>
- Youth Events</h2>
-        <h2 data-lang="sw        <h2 data-lang="sw" style" style="="display:display: none none;">Mat;">Matukioukio Yan Yanayayokuokuja yaja ya Vijana Vijana</h2</h2>
-       >
-        <div class=" <div class="event-list">
+    <section id="events">
+        <h2 data-lang="en">Upcoming Youth Events</h2>
+        <h2 data-lang="sw" style="display: none;">Matukio Yanayokuja ya Vijana</h2>
+        <div class="event-list">
             <div class="event-card">
-               event-list">
-            <div <h3 data class="event-card">
-                <h3 data-lang="en">Diocesan-lang="en Youth Retreat</h3>
-               ">Dioces <h3 data-lang="swan Youth Retreat</h3>
-                <h3 data-lang="sw" style" style="="display:display: none none;">Ret;">Retreat ya Vijreat ya Vijana yaana ya Dayosis Dayosisi</hi</h3>
-                <p><strong data3>
-                <p><strong data-lang="en-lang="en">Date:</">Date:</strongstrong><strong data-lang="><strong data-langsw" style="sw"="display: style="display: none none;">T;">Tarehearehe:</strong> June:</strong> 15, 2025 June 15, 2025</</p>p>
-
-                <p                <p><strong data-lang="en><strong data-lang="en">">Location:</strongLocation:</strong><strong data-lang="sw><strong data-lang="sw" style="" style="display: nonedisplay: none;">Mahali;">Mahali:</strong> St. Mary’s Parish,:</strong> St. Mary’s Parish, Nairobi West</p>
- Nairobi West</p>
-                               <p data <p data-lang="en-lang="en"><strong>Description:</strong> A"><strong>Description:</strong> A day of prayer day of prayer, reflection, and fellowship for youth, reflection, and fellowship for youth.</p>
-               .</p>
-                <p data-lang=" <p data-lang="swsw" style="display: none" style="display: none;"><strong>M;"><strong>Maeleaelezozo:</strong> S:</strong>iku ya sala Siku ya, taf sala, tafakakari, na ushirari, na ushirikaika kwa kwa vij vijana.</p>ana.</p>
-               
-                <button class <button class="btn r="btn rsvp-btn" data-eventsvp-btn" data-event="="retretreat">RSreat">RSVP</button>VP</button
-           >
+                <h3 data-lang="en">Diocesan Youth Retreat</h3>
+                <h3 data-lang="sw" style="display: none;">Retreat ya Vijana ya Dayosisi</h3>
+                <p><strong data-lang="en">Date:</strong><strong data-lang="sw" style="display: none;">Tarehe:</strong> June 15, 2025</p>
+                <p><strong data-lang="en">Location:</strong><strong data-lang="sw" style="display: none;">Mahali:</strong> St. Mary’s Parish, Nairobi West</p>
+                <p data-lang="en"><strong>Description:</strong> A day of prayer, reflection, and fellowship for youth.</p>
+                <p data-lang="sw" style="display: none;"><strong>Maelezo:</strong> Siku ya sala, tafakari, na ushirika kwa vijana.</p>
+                <button class="btn rsvp-btn" data-event="retreat">RSVP</button>
             </div>
-            </div>
-            <!-- Add more event <!-- Add more cards dynamically -->
+            <!-- Add more event cards dynamically -->
         </div>
- event cards dynamically -->
-        </div>
-       </section </section>
+    </section>
 
-    <!-->
-
-    <!-- Forum Preview Forum Preview -->
-    -->
+    <!-- Forum Preview -->
     <section id="forum">
-        <h2 <section id="forum">
- data-lang="        <h2en">Youth data-lang="en"> Forum</Youth Forum</h2>h2>
-        <h
-        <h2 data-lang="sw" style="display: none;">J2 data-lang="sw" style="display: none;">Jukwaukwaaa la Vijana la Vij</h2ana</h2>
+        <h2 data-lang="en">Youth Forum</h2>
+        <h2 data-lang="sw" style="display: none;">Jukwaa la Vijana</h2>
         <div class="forum-post">
->
-        <div class="forum-post">            <h3
-            <h3 data data-lang="en-lang="en">Welcome">Welcome to the Youth to the Youth Forum!</h Forum!</h3>3>
-
-            <h3 data-lang="            <h3sw" style="display: none;"> data-lang="sw"Kar style="display: none;">Karibu kwenyeibu kwenye Jukwaa la Vij Jukwaa la Vijana!</h3>
-            <p data-langana!</h3>
-            <p data-lang="en">Share your thoughts="en">Share your thoughts, ask, ask questions, or questions, or discuss faith with other discuss faith with other youth.</ youth.</pp>
-            <p data-lang="sw>
-            <p data-lang="sw" style="display: none" style=";">Shirdisplay: none;">Shirikiiki m mawazoawazo y yako, ulizaako, uliza mas maswaliwali, au jad, au jadiliili im imaniani na vij na vijana wengineana wengine.</p>.</p>
-           
-            <a <a href="#login href="#login" class="btn"" class=" data-lang="btn" data-lang="enen">Join the">Join the Discussion</a Discussion</a>
-            <a href="#login">
-            class="btn <a href="#" data-langlogin" class="btn" data-lang="sw"="sw" style="display: none;">Jiunge kw style="display: none;">Jiunge kwenyeenye Maj Majadadilianoiliano</a>
-        </div</a>
+            <h3 data-lang="en">Welcome to the Youth Forum!</h3>
+            <h3 data-lang="sw" style="display: none;">Karibu kwenye Jukwaa la Vijana!</h3>
+            <p data-lang="en">Share your thoughts, ask questions, or discuss faith with other youth.</p>
+            <p data-lang="sw" style="display: none;">Shiriki mawazo yako, uliza maswali, au jadili imani na vijana wengine.</p>
+            <a href="#login" class="btn" data-lang="en">Join the Discussion</a>
+            <a href="#login" class="btn" data-lang="sw" style="display: none;">Jiunge kwenye Majadiliano</a>
         </div>
     </section>
-    </section>
-
-    <!-- Registration Section>
 
     <!-- Registration Section -->
-    <section id=" -->
     <section id="register">
-register">
-        <h2 data-lang        <h2 data-lang="en">="en">Join the Youth Community</h2>
-        <h2 dataJoin the Youth Community</h2>
-        <h2 data-lang="sw" style="-lang="sw" style="display:display: none;">Jiunge na none;">Jiunge na Jum Jumuiuiya ya Vijya ya Vijana</hana</h2>
-        <div class="2>
+        <h2 data-lang="en">Join the Youth Community</h2>
+        <h2 data-lang="sw" style="display: none;">Jiunge na Jumuiya ya Vijana</h2>
         <div class="form-container">
-            <formform-container">
             <form id="register-form">
- id="register-form">
-                <label for="name"                <label for="name" data-lang data-lang="en">="en">Full NameFull Name</label></label>
-                <label
-                <label for="name" data-lang="sw for="name" data-lang="sw"" style="display style="display: none;">Jina: none;">Jina Kamili Kamili</label>
-                <input</label>
-                <input type="text type="text" id="" id="name" required patternname" required pattern="[A-Za="[-z\sA-Za-z\s]{2]{2,50}" title,50}" title="Name should="Name should be 2-50 characters be 2-50 characters, letters and, letters and spaces only">
-                <label for="email spaces only">
-                <label for="email" data" data-lang="en-lang="en">Email</label>
-">Email</label>
-                <label for="email                <label for" data-lang="sw" style="email" data="display: none;">-lang="sw" style="displayBarua: none;">Barua Pepe Pepe</label></label>
-                <input
-                <input type=" type="email" id="emailemail" id="email" required>
-               " required> <label for="
-                <labelparish" data for="par-lang="enish" data-lang="en">Parish</label>">Parish
-                <label</label> for="parish" data-lang="sw" style="display: none;">Parokia
-                <label for="parish" data-lang="sw" style="display: none;">Parokia</label></label>
-                <select id="parish" required
+                <label for="name" data-lang="en">Full Name</label>
+                <label for="name" data-lang="sw" style="display: none;">Jina Kamili</label>
+                <input type="text" id="name" required pattern="[A-Za-z\s]{2,50}" title="Name should be 2-50 characters, letters and spaces only">
+                <label for="email" data-lang="en">Email</label>
+                <label for="email" data-lang="sw" style="display: none;">Barua Pepe</label>
+                <input type="email" id="email" required>
+                <label for="parish" data-lang="en">Parish</label>
+                <label for="parish" data-lang="sw" style="display: none;">Parokia</label>
                 <select id="parish" required>
-                    <option value="">
-                    <option data-lang=" value="" data-lang="en">Select Parish</option>
-                   en">Select Parish</option>
- <option value=""                    <option value data-lang="sw="" data-lang="sw" style="display:" style="display: none;">Ch none;">Chaguaagua Parokia Parokia</option>
-                    <option</option> value="holy-family">Holy Family
-                    <option value="holy-family Basilica</option>
-                   ">Holy Family <option value=" Basilica</option>
-                   st-marys <option value="st-marys">St. Mary’s Parish</option>
+                    <option value="" data-lang="en">Select Parish</option>
+                    <option value="" data-lang="sw" style="display: none;">Chagua Parokia</option>
+                    <option value="holy-family">Holy Family Basilica</option>
+                    <option value="st-marys">St. Mary’s Parish</option>
                 </select>
-">St. Mary’s Parish                <label for</option>="password" data-lang="en
-                </select>
-                <label for="">Password</label>
-                <label for="passwordpassword" data-lang="en">Password</label>
-                <label for="password" data-lang="sw" data-lang" style="display: none;">N="sw" style="display:enosiri none;">Nenosiri</label></label>
-                <input
+                <label for="password" data-lang="en">Password</label>
+                <label for="password" data-lang="sw" style="display: none;">Nenosiri</label>
                 <input type="password" id="password" required minlength="8">
-                <label for="captcha" type="password" id="password" required minlength="8">
-                <label for="captcha" data-lang="en">CAPTCHA data-lang="en">CAPTCHA ( (ee.g., Verify you're.g., Verify you're not a bot not a bot)</label>)</label>
-                <label
-                <label for=" for="captcha" data-langcaptcha" data="sw" style="display: none;">CAPTCHA-lang="sw" style="display: none;">CAPTCHA ( (ThibThibititisha kuisha kuwa wewa wewewe si rob si roboti)</labeloti)</label>
-                <input type="text" id="captcha>
-                <input type="text" id="captcha"" placeholder=" placeholder="EnterEnter CAPTCHA" CAPTCHA" required required>
-                <button type="submit" class="btn" data-lang>
-                <button type="submit" class="en">Register</button>
-                <button="btn" data-lang=" type="submit" class="btn" data-langen">Register</button>
-                <button type="submit" class="btn" data-lang="sw"="sw" style="display style="display: none;">Jis: none;">Jisajajili</button>ili</button>
+                <label for="captcha" data-lang="en">CAPTCHA (e.g., Verify you're not a bot)</label>
+                <label for="captcha" data-lang="sw" style="display: none;">CAPTCHA (Thibitisha kuwa wewe si roboti)</label>
+                <input type="text" id="captcha" placeholder="Enter CAPTCHA" required>
+                <button type="submit" class="btn" data-lang="en">Register</button>
+                <button type="submit" class="btn" data-lang="sw" style="display: none;">Jisajili</button>
             </form>
-
-            </            <p dataform>
--lang="en            <p data">Already have-lang="en an account? <a href">Already have an account? <a="#login"> href="#login">Log In</Log In</a></p>
-a></p            <p data>
-            <p-lang="sw data-lang="sw" style="display: none;">Tayari" style="display: none una aka;">Tayari una akaunti?unti? <a href="# <a href="#login">Ingialogin">Ingia</a></p>
-</a></p        </div>>
+            <p data-lang="en">Already have an account? <a href="#login">Log In</a></p>
+            <p data-lang="sw" style="display: none;">Tayari una akaunti? <a href="#login">Ingia</a></p>
         </div>
     </section>
 
-    <!-- User Dashboard (Post
+    <!-- User Dashboard (Post-Login, Hidden by Default) -->
+    <section id="dashboard" style="display: none;">
+        <h2 data-lang="en">Welcome, <span id="user-name">User</span>!</h2>
+        <h2 data-lang="sw" style="display: none;">Karibu, <span id="user-name-sw">Mtumiaji</span>!</h2>
+        <div class="form-container">
+            <p data-lang="en">Your Parish: <span id="user-parish">N/A</span></p>
+            <p data-lang="sw" style="display: none;">Parokia Yako: <span id="user-parish-sw">Hapana</span></p>
+            <p data-lang="en">Upcoming Events:</p>
+            <p data-lang="sw" style="display: none;">Matukio Yanayokuja:</p>
+            <ul id="user-events">
+                <!-- Populated dynamically -->
+            </ul>
+            <a href="#" class="btn" id="logout" data-lang="en">Log Out</a>
+            <a href="#" class="btn" id="logout-sw" data-lang="sw" style="display: none;">Toka</a>
+        </div>
     </section>
 
-    <!-- User Dashboard (Post-Login, Hidden by-Login, Hidden by Default) --> Default) -->
-    <section
-    <section id="dashboard" style=" id="dashboarddisplay: none" style=";">
-       display: none <h2 data;">
-        <h2 data-lang-lang="en="en">Welcome">Welcome, <span id=", <span id="user-name">user-name">User</span>!</h2>
-        <h2 data-lang="swUser</span>!</h2>
-        <h2 data-lang="sw" style="" style="display: nonedisplay: none;">Karibu;">Karibu, <span id, <span id="user-name="user-name-sw">Mt-sw">Mtumiaumiaji</spanji</span>!</h>!</h2>2>
-        <div class
-        <div class="form-container="form-container">
-            <p data">
-            <p data-lang="en-lang="en">Your Parish">Your Parish: <span id: <span id="user-par="user-parish">Nish">N/A</span/A</span></p>></p>
-            <p
-            <p data-lang=" data-lang="sw" style="sw" style="display: none;">display: none;">ParokiaParokia Y Yako:ako: <span <span id=" id="user-parish-sw">Hapuser-parishana</span-sw">Hapana</span></p>
-           ></p> <p data-lang="en">Upcoming
-            <p Events:</p>
- data-lang="            <p dataen">Upcoming-lang="sw Events:</p>
-            <p" style=" data-lang="display: nonesw" style="display:;">Matuk none;">Matio Yanayukio Yanokuja:</ayokujap>
-:</p>
-                       <ul id="user-events <ul id="">
-               user-events"> <!-- Populated dynamically -->
-            </ul>
-           
-                <!-- Populated <a href="#" class=" dynamically -->
-            </ul>
-            <a hrefbtn"="#" class=" id="logoutbtn" id" data-lang="logout"="en">Log Out</ data-lang="en">Loga>
- Out</a            <a href="#" class>
-            <a="btn" id="logout-sw" data-lang=" href="#" class="btn" id="sw" style="display: none;">Tlogout-sw" data-lang="sw" style="display: none;">Toka</a>oka</a>
-
-        </div        </div>
->
-    </section>    </section>
-
-
-
-    <!-- Login Modal    <!-- Login -->
-    <div id="login-modal" class Modal -->
-    <div id="login-modal" class="="modal">
-modal">
-        <div class="modal        <div class-content">
-            <span class="close="modal-content-btn">&times;</span>
-            <h2 data-lang">
-            <span="en"> class="closeLog In</-btn">&timesh2>;</span>
-            <h2
-            <h2 data-lang="sw" data-lang="en"> style="display:Log In</ none;">Ingiah2>
-            <h</h2>
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 data-lang="en">Log In</h2>
+            <h2 data-lang="sw" style="display: none;">Ingia</h2>
             <form id="login-form">
-2 data-lang                <label for="login="sw" style="display-email" data-lang="en">Email: none;">Ingia</</label>h2>
-            <form
-                <label for id="login="login-email-form">
-" data-lang                <label for="sw" style="display: none;">="login-email" data-langBarua Pepe</label="en">Email</label>
-               >
-                <label <input type="email" id=" for="loginlogin-email" required>
-                <label for="login-password" data-lang="-email" data-lang="sw" style="display: none;">Barua Pepe</label>
-                <input type="email" id="login-emailen">Password</label>
-                <label" required>
-                <label for="login-password" data for="login-lang="sw-password" data" style="-lang="en">display: none;">Password</labelNenosiri>
-                <label for="login-password</label>" data-lang
-                <input="sw" style="display: type="password none;">N" id="loginenosiri</label>
+                <label for="login-email" data-lang="en">Email</label>
+                <label for="login-email" data-lang="sw" style="display: none;">Barua Pepe</label>
+                <input type="email" id="login-email" required>
+                <label for="login-password" data-lang="en">Password</label>
+                <label for="login-password" data-lang="sw" style="display: none;">Nenosiri</label>
                 <input type="password" id="login-password" required>
-                <button type-password" required>
-                <button type="submit" class="="submit"btn" data-lang="en">Log In</button>
-                class="btn <button type="submit" class="btn" data-lang" data-lang="en">Log In</button>
-                <button type="submit" class="btn="sw" style" data-lang="sw" style="display: none="display: none;">Ingia;">Ingia</button>
-           </button>
-            </ </form>form>
-
-        </div>
+                <button type="submit" class="btn" data-lang="en">Log In</button>
+                <button type="submit" class="btn" data-lang="sw" style="display: none;">Ingia</button>
+            </form>
         </div>
     </div>
 
     <!-- Contact Section -->
-    <section id="contact    </div>
-
-    <!-- Contact Section -->
     <section id="contact">
-        <h2 data-lang="en">Contact">
         <h2 data-lang="en">Contact Us</h2>
-        <h2 data-lang=" Us</h2>
-        <h2 data-lang="sw" style="displaysw" style: none;">Wasil="display: none;">Wasianailiana N Nasi</hasi</h2>
-        <p2>
-        <p data-lang=" data-lang="enen">Email">Email: youth@: youth@archdioceseofnairobi.org</p>
-       archdioceseofnairobi.org</p>
-        <p data-lang <p data-lang="sw" style="display: none;">Bar="sw" style="display: none;">Barua Pepe: vijana@archdioceseofnairobi.org</pua Pepe: vijana@archdioceseofnairobi.org</p>
-        <p>Phone: +>
-        <p>Phone: +254 123 456254 123 456 789 789</p>
-        <p</p>
-        <p>WhatsApp: +254>WhatsApp: + 987 654 321254 987 654 321</p></p>
-        <a href
-        <a="https:// href="https://wa.me/+wa.me/+254987654254987654321" class321" class="btn" data-lang="="btn" dataen">Join-lang="en Our WhatsApp">Join Our WhatsApp Group Group</a>
-       </a> <a href="https://wa.me/+254987654321" class
-        <a href="https="btn" data-lang="sw" style="display: none;">Ji://wa.me/+254987654321" class="btn" data-lang="sw" style="display: none;">Jiunge na Kikunge na Kikundi cheundi chetu cha Whatstu cha WhatsApp</a>
-    </App</a>
+        <h2 data-lang="sw" style="display: none;">Wasiliana Nasi</h2>
+        <p data-lang="en">Email: youth@archdioceseofnairobi.org</p>
+        <p data-lang="sw" style="display: none;">Barua Pepe: vijana@archdioceseofnairobi.org</p>
+        <p>Phone: +254 123 456 789</p>
+        <p>WhatsApp: +254 987 654 321</p>
+        <a href="https://wa.me/+254987654321" class="btn" data-lang="en">Join Our WhatsApp Group</a>
+        <a href="https://wa.me/+254987654321" class="btn" data-lang="sw" style="display: none;">Jiunge na Kikundi chetu cha WhatsApp</a>
     </section>
 
-    <!--section>
-
- Footer -->
-    <!-- Footer    <footer> -->
-   
-        <p <footer>
-        <p>© 2025 Archdiocese of Nairobi. All>© 2025 Archdiocese of Nairobi. All rights rights reserved.</ reserved.</p>
-p>
-    </footer    </footer>
->
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Archdiocese of Nairobi. All rights reserved.</p>
+    </footer>
 
     <script>
         // Sample Data
-       
-    <script>
-        // Sample Data
-        const parishes const parishes = = [
-            { [
-           
-                name {
-               : "Holy name: " Family Basilica",Holy Family Basilica
-                deanery",
-                deanery:: "N "Nairobi Central",
+        const parishes = [
+            {
+                name: "Holy Family Basilica",
+                deanery: "Nairobi Central",
                 leader: "Jane Doe",
                 contact: "jane.doe@archdioceseofnairobi.org",
-airobi Central",
-                leader: "Jane Doe",
-                contact: "jane.doe@archdioceseofnairobi.org                activities:",
-                "Bible Study, Choir, activities: "Bible Study, Choir, Community Community Outreach" Outreach"
-
-            },            },
-
-            {            {
-
-                name: "St                name:. Mary’s "St. Mary’s Parish Parish",
+                activities: "Bible Study, Choir, Community Outreach"
+            },
+            {
+                name: "St. Mary’s Parish",
                 deanery: "Nairobi West",
-                leader: "John M",
-                deanery: "Nairobiwaura",
-                contact: "john West",
                 leader: "John Mwaura",
-                contact: "john.mwaura.mwaura@archdioceseof@archdiocesenairobi.orgofnairobi",
-                activities: "Youth Retreat, Sports.org",
-                activities:, Cate "Youth Retreatchesis", Sports,
+                contact: "john.mwaura@archdioceseofnairobi.org",
+                activities: "Youth Retreat, Sports, Catechesis"
             }
-        Catechesis" ];
-
-        const
-            }
-        events = [ ];
+        ];
 
         const events = [
             {
                 id: "retreat",
                 name: "Diocesan Youth Retreat",
-                name
-            {
-                id: "Sw: "retreat",Retreat ya
-                name Vijana ya Day: "Diocesan Youth Retreat",
-                nameSw: "Retreat ya Vijana ya Dayosisi",osisi",
-                date: "June
-                date: "June 15, 202 15, 2025",
-                location: "St5",
-                location: "St. Mary’s. Mary’s Parish, Nairobi West",
-                description: " Parish, Nairobi West",
-                description:A day of prayer "A day of prayer, reflection,, reflection, and fellowship for youth.",
-                description and fellowship for youth.",
-                descriptionSw: "Sw: "Siku ya sala, tafakariSiku ya, na us sala, tafhirika kwaakari, vijana." na ushirika kwa vijana."
-           
-            } }
-        ];
+                nameSw: "Retreat ya Vijana ya Dayosisi",
+                date: "June 15, 2025",
+                location: "St. Mary’s Parish, Nairobi West",
+                description: "A day of prayer, reflection, and fellowship for youth.",
+                descriptionSw: "Siku ya sala, tafakari, na ushirika kwa vijana."
+            }
         ];
 
         // Language Toggle
-        document.getElementById("language
-
-        // Language-toggle").add Toggle
-        document.getElementById("language-toggleEventListener("").addEventchange", functionListener("change() {
-            const", function() {
-            lang = this const lang = this.value;
-            document.querySelectorAll("[data-lang]").forEach(el =>.value;
+        document.getElementById("language-toggle").addEventListener("change", function() {
+            const lang = this.value;
             document.querySelectorAll("[data-lang]").forEach(el => {
-                el.style.display = {
-                el.style.display = el el.getAttribute("data.getAttribute("data-lang") === lang ? "block"-lang") === lang ? " : "noneblock" :";
-            }); "none";
+                el.style.display = el.getAttribute("data-lang") === lang ? "block" : "none";
             });
-            document
-            document.getElementById("search-parish").style.display = lang === "en".getElementById("search ? "block" : "none";
-            document.getElementById("search-par-parish").ish-swstyle.display =").style.display = lang === "sw" ? lang === " "block" : "noneen" ?";
+            document.getElementById("search-parish").style.display = lang === "en" ? "block" : "none";
+            document.getElementById("search-parish-sw").style.display = lang === "sw" ? "block" : "none";
         });
- "block" : "none";
-            document.getElementById("search-parish-sw").style
-        // Populate.display = lang Parish List
-        function loadPar === "sw" ?ishes(filter = "block" : "", deanery "none"; = "") {
-        });
-            const
 
- parishList =        // Populate Parish document.querySelector(".parish List
-        function-list");
-            parishList loadParishes.innerHTML =(filter = "", "";
-            deanery = const filteredPar "") {
-ishes = parishes.filter(parish =>
-                (parish.name.toLowerCase().includes            const parishList =(filter.toLower document.querySelectorCase()) ||(".parish
-                 parish-list");
-.deanery            parishList.toLowerCase.innerHTML =().includes(filter.toLower "";
-            const filteredCase())) &&Parishes = parishes.filter(parish
-                (! =>
-               deanery (parish.name.toLowerCase().includes(filter.toLowerCase || parish.deanery === deanery)
-            );
-            filteredParishes.forEach(parish => {
-                const card()) ||
-                 = document.create parish.deanElement("divery.toLower");
-               Case().includes card.className(filter.toLower = "parish-card";
-Case())) &&                card.inner
-                (!HTML = `
-                    <h3>${parish.name}</h3>
-                    <p><strong data-lang="en">Deandeanery || parish.deanery === deanery)
+        // Populate Parish List
+        function loadParishes(filter = "", deanery = "") {
+            const parishList = document.querySelector(".parish-list");
+            parishList.innerHTML = "";
+            const filteredParishes = parishes.filter(parish =>
+                (parish.name.toLowerCase().includes(filter.toLowerCase()) ||
+                 parish.deanery.toLowerCase().includes(filter.toLowerCase())) &&
+                (!deanery || parish.deanery === deanery)
             );
             filteredParishes.forEach(parish => {
                 const card = document.createElement("div");
                 card.className = "parish-card";
-                card.innerHTMLery:</strong = `
-                    <h3>${><strong data-langparish.name}</="sw" style="displayh3>: none;">Jim
-                    <p><strong data-lang="bo:</strong> ${parish.deen">Deanery:</strong><strong data-lang="sw" style="display: none;">Jimbo:</strong> ${parish.deanery}</p>
-                    <panery}</p>
-                    <p><strong><strong data-lang data-lang="="en">en">YouthYouth Leader:</ Leader:</strongstrong><strong data-lang="><strong data-lang="sw"sw" style style="display="display: none;">K: none;">Kiongoiongozizi wa Vij wa Vijana:</strongana:</strong> ${parish.> ${parish.leaderleader}</p}</p>>
-                   
-                    <p <p><strong data><strong data-lang-lang="en">Contact="en">Contact:</strong:</strong><strong><strong data-lang data-lang="="sw"sw" style="display: none;">Mawasil style="displayiano:</strong> ${parish.contact: none;">Mawasil}</p>iano:</strong
-                    <p> ${parish.contact}</p>
-                    <p><strong data-lang="en">Activities:</strong><strong data-lang><strong data-lang="en">Activities
+                card.innerHTML = `
+                    <h3>${parish.name}</h3>
+                    <p><strong data-lang="en">Deanery:</strong><strong data-lang="sw" style="display: none;">Jimbo:</strong> ${parish.deanery}</p>
+                    <p><strong data-lang="en">Youth Leader:</strong><strong data-lang="sw" style="display: none;">Kiongozi wa Vijana:</strong> ${parish.leader}</p>
+                    <p><strong data-lang="en">Contact:</strong><strong data-lang="sw" style="display: none;">Mawasiliano:</strong> ${parish.contact}</p>
+                    <p><strong data-lang="en">Activities:</strong><strong data-lang="sw" style="display: none;">Shughuli:</strong> ${parish.activities}</p>
+                    <a href="#" class="btn" data-lang="en">Join Group</a>
+                    <a href="#" class="btn" data-lang="sw" style="display: none;">Jiunge na Kikundi</a>
+                `;
+                parishList.appendChild(card);
+            });
+        }
+
+        // Filter Parishes
+        document.getElementById("search-parish").addEventListener("input", function() {
+            loadParishes(this.value, document.getElementById("deanery-filter").value);
+        });
+
+        document.getElementById("search-parish-sw").addEventListener("input", function() {
+            loadParishes(this.value, document.getElementById("deanery-filter").value);
+        });
+
+        document.getElementById("deanery-filter").addEventListener("change", function() {
+            const searchInput = document.getElementById("language-toggle").value === "en" ? 
+                document.getElementById("search-parish") : document.getElementById("search-parish-sw");
+            loadParishes(searchInput.value, this.value);
+        });
+
+        // Handle Registration Form
+        document.getElementById("register-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const parish = document.getElementById("parish").value;
+            const password = document.getElementById("password").value;
+            const captcha = document.getElementById("captcha").value;
+
+            if (captcha !== "1234") { // Placeholder CAPTCHA check
+                alert("Invalid CAPTCHA. Please try again.");
+                return;
+            }
+
+            // Simulate registration (replace with API call)
+            localStorage.setItem("user", JSON.stringify({ name, email, parish }));
+            alert("Registration successful! Welcome to the Youth Portal.");
+            showDashboard(name, parish);
+            this.reset();
+        });
+
+        // Handle Login Form
+        document.getElementById("login-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const email = document.getElementById("login-email").value;
+            const user = JSON.parse(localStorage.getItem("user") || "{}");
+            if (user.email === email) {
+                showDashboard(user.name, user.parish);
+                closeModal();
+            } else {
+                alert("Invalid credentials. Please try again.");
+            }
+        });
+
+        // Show Dashboard
+        function showDashboard(name, parish) {
+            document.getElementById("register").style.display = "none";
+            document.getElementById("dashboard").style.display = "block";
+            document.getElementById("user-name").textContent = name;
+            document.getElementById("user-name-sw").textContent = name;
+            document.getElementById("user-parish").textContent = parish;
+            document.getElementById("user-parish-sw").textContent = parish;
+
+            const userEvents = document.getElementById("user-events");
+            userEvents.innerHTML = events.map(event => `<li>${event.name} - ${event.date}</li>`).join("");
+        }
+
+        // Handle Logout
+        document.getElementById("logout").addEventListener("click", function() {
+            document.getElementById("dashboard").style.display = "none";
+            document.getElementById("register").style.display = "block";
+        });
+
+        document.getElementById("logout-sw").addEventListener("click", function() {
+            document.getElementById("dashboard").style.display = "none";
+            document.getElementById("register").style.display = "block";
+        });
+
+        // Handle Event RSVP
+        document.querySelectorAll(".rsvp-btn").forEach(btn => {
+            btn.addEventListener("click", function() {
+                const eventId = this.getAttribute("data-event");
+                const event = events.find(e => e.id === eventId);
+                alert(`You have RSVPed for ${event.name}!`);
+            });
+        });
+
+        // Modal Controls
+        document.querySelectorAll('a[href="#login"]').forEach(link => {
+            link.addEventListener("click", function(e) {
+                e.preventDefault();
+                document.getElementById("login-modal").style.display = "flex";
+            });
+        });
+
+        document.querySelector(".close-btn").addEventListener("click", closeModal);
+
+        function closeModal() {
+            document.getElementById("login-modal").style.display = "none";
+        }
+
+        // Initialize
+        document.addEventListener("DOMContentLoaded", () => {
+            loadParishes();
+            if (localStorage.getItem("user")) {
+                const user = JSON.parse(localStorage.getItem("user"));
+                showDashboard(user.name, user.parish);
+            }
+        });
+    </script>
+</body>
+</html>
