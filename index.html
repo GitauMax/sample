@@ -3,43 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archdiocese of Nairobi Youth Portal</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Archdiocese of Kakamega Youth Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         /* General Styles */
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #F8F1E9; /* Pearl White */
             color: #333;
+            line-height: 1.6;
         }
 
         h2 {
             text-align: center;
             color: #2E7D32; /* Green */
+            font-weight: 700;
+            margin-bottom: 20px;
         }
 
         .btn {
             display: inline-block;
             padding: 8px 16px;
-            background-color: #D4A017; /* Gold */
-            color: #fff;
+            background: linear-gradient(135deg, #2E7D32, #4CAF50); /* Green gradient */
+            color: #F8F1E9;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s, transform 0.2s;
+            border-radius: 25px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-weight: 400;
         }
 
         .btn:hover {
-            background-color: #e0b93a; /* Lighter Gold */
-            transform: scale(1.05);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         /* Header and Navbar */
         header {
-            background-color: #2E7D32; /* Green */
-            color: #fff;
-            padding: 8px 15px; /* Reduced height */
+            background: linear-gradient(90deg, #2E7D32, #388E3C); /* Green gradient */
+            color: #F8F1E9;
+            padding: 8px 15px; /* Compact height ~25px */
             position: sticky;
             top: 0;
             z-index: 100;
@@ -56,7 +60,8 @@
 
         .logo {
             font-size: 1.2em;
-            font-weight: 600;
+            font-weight: 700;
+            letter-spacing: 1px;
         }
 
         .nav-links {
@@ -68,13 +73,14 @@
         }
 
         .nav-links li a {
-            color: #F8F1E9; /* Pearl White */
+            color: #F8F1E9;
             text-decoration: none;
             font-size: 0.9em;
+            transition: color 0.3s;
         }
 
         .nav-links li a:hover {
-            color: #D4A017; /* Gold */
+            color: #A5D6A7; /* Light green for hover */
         }
 
         /* Hamburger Menu */
@@ -83,12 +89,17 @@
             font-size: 1.2em;
             cursor: pointer;
             color: #F8F1E9;
+            transition: transform 0.3s;
+        }
+
+        .hamburger:hover {
+            transform: rotate(90deg);
         }
 
         /* Language Toggle */
         .lang-toggle {
             position: absolute;
-            top: 10px;
+            top: 8px;
             right: 60px;
         }
 
@@ -97,36 +108,41 @@
             border-radius: 5px;
             background-color: #F8F1E9;
             color: #2E7D32;
+            border: 1px solid #2E7D32;
         }
 
         /* Welcome Section */
         #welcome {
-            background: url('https://via.placeholder.com/1200x400/2E7D32/fff?text=Youth+Retreat') center/cover no-repeat;
+            background: url('https://via.placeholder.com/1200x400/2E7D32/fff?text=Kakamega+Youth+Retreat') center/cover no-repeat;
             text-align: center;
-            padding: 50px 20px;
+            padding: 60px 20px;
             color: #F8F1E9;
-            animation: fadeIn 1s ease-in;
+            animation: fadeIn 1.5s ease-in;
         }
 
         .banner {
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 25px;
-            border-radius: 10px;
+            background: linear-gradient(135deg, rgba(46, 125, 50, 0.7), rgba(76, 175, 80, 0.7));
+            padding: 30px;
+            border-radius: 15px;
             max-width: 600px;
             margin: 0 auto;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
 
         .banner h1 {
-            font-size: 2.2em;
+            font-size: 2.3em;
+            font-weight: 700;
+            margin-bottom: 10px;
         }
 
         .banner p {
-            font-size: 1.1em;
+            font-size: 1.2em;
+            font-weight: 300;
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         /* Parishes Section */
@@ -139,36 +155,44 @@
         .filter-search {
             display: flex;
             gap: 10px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
         #search-parish, #search-parish-sw, #deanery-filter {
             padding: 8px;
-            border: 1px solid #D4A017; /* Gold */
+            border: 1px solid #2E7D32;
             border-radius: 5px;
             width: 100%;
             max-width: 280px;
             background-color: #F8F1E9;
+            transition: border-color 0.3s;
+        }
+
+        #search-parish:focus, #search-parish-sw:focus, #deanery-filter:focus {
+            border-color: #4CAF50;
+            outline: none;
         }
 
         .parish-list {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 15px;
+            gap: 20px;
         }
 
         .parish-card {
             background-color: #fff;
             padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .parish-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
 
         /* Events Section */
@@ -180,14 +204,19 @@
         .event-list {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 15px;
+            gap: 20px;
         }
 
         .event-card {
             background-color: #F8F1E9;
             padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .event-card:hover {
+            transform: translateY(-3px);
         }
 
         /* Registration/Login/Dashboard Sections */
@@ -199,27 +228,33 @@
 
         .form-container {
             background-color: #fff;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
         }
 
         form {
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 10px;
         }
 
         form label {
-            font-weight: 600;
+            font-weight: 400;
             color: #2E7D32;
         }
 
         form input, form select {
             padding: 8px;
-            border: 1px solid #D4A017;
+            border: 1px solid #2E7D32;
             border-radius: 5px;
             background-color: #F8F1E9;
+            transition: border-color 0.3s;
+        }
+
+        form input:focus, form select:focus {
+            border-color: #4CAF50;
+            outline: none;
         }
 
         /* Login Modal */
@@ -238,10 +273,11 @@
 
         .modal-content {
             background-color: #fff;
-            padding: 15px;
-            border-radius: 8px;
+            padding: 20px;
+            border-radius: 10px;
             max-width: 380px;
             width: 90%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
 
         .close-btn {
@@ -249,6 +285,11 @@
             font-size: 1.3em;
             cursor: pointer;
             color: #2E7D32;
+            transition: color 0.3s;
+        }
+
+        .close-btn:hover {
+            color: #4CAF50;
         }
 
         /* Forum Section */
@@ -260,17 +301,17 @@
 
         .forum-post {
             background-color: #fff;
-            padding: 12px;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
         }
 
         /* Contact Section */
         #contact {
             padding: 30px 20px;
             text-align: center;
-            background-color: #2E7D32;
+            background: linear-gradient(135deg, #2E7D32, #4CAF50);
             color: #F8F1E9;
         }
 
@@ -278,7 +319,7 @@
         footer {
             text-align: center;
             padding: 15px;
-            background-color: #333;
+            background-color: #2E7D32;
             color: #F8F1E9;
         }
 
@@ -291,8 +332,9 @@
                 top: 25px;
                 left: 0;
                 width: 100%;
-                background-color: #2E7D32;
+                background: linear-gradient(90deg, #2E7D32, #388E3C);
                 padding: 10px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             }
 
             .nav-links.active {
@@ -309,11 +351,12 @@
             }
 
             .banner h1 {
-                font-size: 1.6em;
+                font-size: 1.8em;
             }
 
             .filter-search {
                 flex-direction: column;
+                align-items: center;
             }
         }
     </style>
@@ -330,11 +373,11 @@
     <!-- Header with Hamburger Menu -->
     <header>
         <nav>
-            <div class="logo">Archdiocese of Nairobi</div>
+            <div class="logo">Archdiocese of Kakamega</div>
             <div class="hamburger">☰</div>
             <ul class="nav-links">
-                <li><a href="https://archdioceseofnairobi.org/" data-lang="en">Home</a>
-                    <a href="https://archdioceseofnairobi.org/" data-lang="sw" style="display: none;">Nyumbani</a></li>
+                <li><a href="https://archdioceseofkakamega.org/" data-lang="en">Home</a>
+                    <a href="https://archdioceseofkakamega.org/" data-lang="sw" style="display: none;">Nyumbani</a></li>
                 <li><a href="#parishes" data-lang="en">Parishes</a>
                     <a href="#parishes" data-lang="sw" style="display: none;">Parokia</a></li>
                 <li><a href="#events" data-lang="en">Events</a>
@@ -368,9 +411,9 @@
             <input type="text" id="search-parish-sw" placeholder="Tafuta kwa parokia au jimbo..." data-lang="sw" style="display: none;">
             <select id="deanery-filter">
                 <option value="">All Deaneries</option>
-                <option value="Nairobi Central">Nairobi Central</option>
-                <option value="Nairobi West">Nairobi West</option>
-                <option value="Nairobi East">Nairobi East</option>
+                <option value="Kakamega Central">Kakamega Central</option>
+                <option value="Kakamega East">Kakamega East</option>
+                <option value="Kakamega West">Kakamega West</option>
             </select>
         </div>
         <div class="parish-list">
@@ -387,7 +430,7 @@
                 <h3 data-lang="en">Diocesan Youth Retreat</h3>
                 <h3 data-lang="sw" style="display: none;">Retreat ya Vijana ya Dayosisi</h3>
                 <p><strong data-lang="en">Date:</strong><strong data-lang="sw" style="display: none;">Tarehe:</strong> June 15, 2025</p>
-                <p><strong data-lang="en">Location:</strong><strong data-lang="sw" style="display: none;">Mahali:</strong> St. Mary’s Parish, Nairobi West</p>
+                <p><strong data-lang="en">Location:</strong><strong data-lang="sw" style="display: none;">Mahali:</strong> St. Joseph’s Cathedral, Kakamega Central</p>
                 <p data-lang="en"><strong>Description:</strong> A day of prayer, reflection, and fellowship for youth.</p>
                 <p data-lang="sw" style="display: none;"><strong>Maelezo:</strong> Siku ya sala, tafakari, na ushirika kwa vijana.</p>
                 <button class="btn rsvp-btn" data-event="retreat">RSVP</button>
@@ -426,8 +469,8 @@
                 <select id="parish" required>
                     <option value="" data-lang="en">Select Parish</option>
                     <option value="" data-lang="sw" style="display: none;">Chagua Parokia</option>
-                    <option value="holy-family">Holy Family Basilica</option>
-                    <option value="st-marys">St. Mary’s Parish</option>
+                    <option value="st-josephs">St. Joseph’s Cathedral</option>
+                    <option value="st-augustines">St. Augustine’s Parish</option>
                 </select>
                 <label for="password" data-lang="en">Password</label>
                 <label for="password" data-lang="sw" style="display: none;">Nenosiri</label>
@@ -483,34 +526,34 @@
     <section id="contact">
         <h2 data-lang="en">Contact Us</h2>
         <h2 data-lang="sw" style="display: none;">Wasiliana Nasi</h2>
-        <p data-lang="en">Email: youth@archdioceseofnairobi.org</p>
-        <p data-lang="sw" style="display: none;">Barua Pepe: vijana@archdioceseofnairobi.org</p>
-        <p>Phone: +254 123 456 789</p>
-        <p>WhatsApp: +254 987 654 321</p>
-        <a href="https://wa.me/+254987654321" class="btn" data-lang="en">Join Our WhatsApp Group</a>
-        <a href="https://wa.me/+254987654321" class="btn" data-lang="sw" style="display: none;">Jiunge na Kikundi chetu cha WhatsApp</a>
+        <p data-lang="en">Email: youth@archdioceseofkakamega.org</p>
+        <p data-lang="sw" style="display: none;">Barua Pepe: vijana@archdioceseofkakamega.org</p>
+        <p>Phone: +254 987 654 321</p>
+        <p>WhatsApp: +254 123 456 789</p>
+        <a href="https://wa.me/+254123456789" class="btn" data-lang="en">Join Our WhatsApp Group</a>
+        <a href="https://wa.me/+254123456789" class="btn" data-lang="sw" style="display: none;">Jiunge na Kikundi chetu cha WhatsApp</a>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Archdiocese of Nairobi. All rights reserved.</p>
+        <p>© 2025 Archdiocese of Kakamega. All rights reserved.</p>
     </footer>
 
     <script>
         // Sample Data
         const parishes = [
             {
-                name: "Holy Family Basilica",
-                deanery: "Nairobi Central",
-                leader: "Jane Doe",
-                contact: "jane.doe@archdioceseofnairobi.org",
+                name: "St. Joseph’s Cathedral",
+                deanery: "Kakamega Central",
+                leader: "Mary Wanjala",
+                contact: "mary.wanjala@archdioceseofkakamega.org",
                 activities: "Bible Study, Choir, Community Outreach"
             },
             {
-                name: "St. Mary’s Parish",
-                deanery: "Nairobi West",
-                leader: "John Mwaura",
-                contact: "john.mwaura@archdioceseofnairobi.org",
+                name: "St. Augustine’s Parish",
+                deanery: "Kakamega West",
+                leader: "Peter Okoth",
+                contact: "peter.okoth@archdioceseofkakamega.org",
                 activities: "Youth Retreat, Sports, Catechesis"
             }
         ];
@@ -521,7 +564,7 @@
                 name: "Diocesan Youth Retreat",
                 nameSw: "Retreat ya Vijana ya Dayosisi",
                 date: "June 15, 2025",
-                location: "St. Mary’s Parish, Nairobi West",
+                location: "St. Joseph’s Cathedral, Kakamega Central",
                 description: "A day of prayer, reflection, and fellowship for youth.",
                 descriptionSw: "Siku ya sala, tafakari, na ushirika kwa vijana."
             }
@@ -673,4 +716,4 @@
         });
     </script>
 </body>
-    </html>
+</html>
